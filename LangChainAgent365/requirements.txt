@@ -1,0 +1,15 @@
+# =========================================================================
+# LangChainAgent365 — sample using Azure OpenAI + classic LangChain AgentExecutor.
+#
+# As of LangChain 1.0 the imperative `AgentExecutor` and
+# `create_tool_calling_agent` helpers were moved out of the core `langchain`
+# package into the separate `langchain-classic` distribution. We pin both so
+# the sample keeps working on current installs.
+# =========================================================================
+
+# Base agent only (no Agent 365 telemetry yet).
+langchain>=1.0.0
+langchain-classic>=1.0.0
+langchain-openai>=0.3.0
+azure-identity>=1.25.0
+python-dotenv>=1.0.0

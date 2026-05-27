@@ -1,0 +1,14 @@
+# =========================================================================
+# LangChainAgent365 — Agent 365 integrated version of the AgentExecutor sample.
+# =========================================================================
+
+# Base deps (same as requirements.txt) — duplicated so this file is self-contained.
+langchain>=1.0.0
+langchain-classic>=1.0.0
+langchain-openai>=0.3.0
+azure-identity>=1.25.0
+python-dotenv>=1.0.0
+
+# Agent 365 telemetry stack.
+microsoft-opentelemetry>=1.2.0
+msal>=1.36.0

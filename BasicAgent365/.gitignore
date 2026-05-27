@@ -1,0 +1,9 @@
+# Local environment — never commit
+.env
+a365.generated.config.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/

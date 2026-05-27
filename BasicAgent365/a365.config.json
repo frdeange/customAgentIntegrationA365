@@ -1,0 +1,9 @@
+{
+  "tenantId": "562029ef-9022-45a6-b255-40cd71ebb2ce",
+  "clientAppId": "07c96a10-9a3d-44a1-89c6-fc434348db16",
+  "agentIdentityDisplayName": "inditex-test-A365 Identity",
+  "agentBlueprintDisplayName": "inditex-test-A365 Blueprint",
+  "agentDescription": "inditex-test-A365",
+  "aiTeammate": false,
+  "useBlueprint": true
+}

@@ -1,0 +1,10 @@
+# =========================================================================
+# LangGraphAgent365 — sample using Azure OpenAI + LangGraph create_react_agent.
+# =========================================================================
+
+# Base agent only (no Agent 365 telemetry yet).
+langgraph>=0.2.0
+langchain-core>=0.3.0
+langchain-openai>=0.3.0
+azure-identity>=1.25.0
+python-dotenv>=1.0.0

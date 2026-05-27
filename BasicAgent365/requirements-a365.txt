@@ -1,0 +1,17 @@
+# Additional requirements for the Agent 365-integrated agent (agent_a365.py).
+# Install with:   pip install --pre -r requirements-a365.txt
+#
+# Mirrors the dependencies of the Microsoft autonomous sample at
+#   https://github.com/microsoft/Agent365-Samples/tree/main/python/autonomous/github-trending
+-r requirements.txt
+
+# Microsoft OpenTelemetry Distro.
+# Exposes use_microsoft_opentelemetry() and the Agent 365 audit scopes
+# (InvokeAgentScope, InferenceScope, ExecuteToolScope, OutputScope) under
+# microsoft.opentelemetry.a365.core. Pre-release at the time of writing.
+microsoft-opentelemetry>=0.1.0b1
+
+# MSAL — used directly for the 3-hop FMI/FIC token chain. azure-identity does
+# not yet expose `fmi_path` on its confidential-client flows, so we use msal
+# directly (matches the official Microsoft sample).
+msal>=1.36.0
