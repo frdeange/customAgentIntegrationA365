@@ -1,0 +1,21 @@
+# Additional requirements for the autonomous-pattern Agent 365 PoC.
+# Install with: pip install --pre -r requirements-a365.txt
+#
+# These mirror the Microsoft sample at:
+#   https://github.com/microsoft/Agent365-Samples/tree/main/python/autonomous/github-trending
+-r requirements.txt
+
+# Microsoft OpenTelemetry Distro — exposes use_microsoft_opentelemetry() and
+# the A365 observability scopes (InvokeAgentScope, InferenceScope, ExecuteToolScope)
+# under microsoft.opentelemetry.a365.core. Pre-release at the time of writing.
+microsoft-opentelemetry>=0.1.0b1
+
+# MSAL — used directly for the 3-hop FMI/FIC token chain. azure-identity does
+# not yet expose `fmi_path` on its confidential-client flows, so we use msal
+# directly (matches the official sample).
+msal>=1.36.0
+
+# Async dependencies for the autonomous loop + health endpoint.
+aiohttp>=3.13.5
+openai>=2.32.0
+httpx>=0.28.1

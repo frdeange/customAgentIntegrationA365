@@ -1,0 +1,5 @@
+# Base requirements - agent_basic.py
+# Entra ID auth, NO Microsoft AI/agent SDKs
+azure-identity>=1.19.0
+python-dotenv>=1.0.0
+openai>=2.38.0
